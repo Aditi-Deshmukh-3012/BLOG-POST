@@ -81,17 +81,22 @@ Input is escaped to prevent SQL Injection (using prepared statements).
 
 ScreenShots:
 
+Home Page:
+
 <img width="1913" height="877" alt="Screenshot 2025-07-23 235426" src="https://github.com/user-attachments/assets/9a6dc0bf-0b6c-478a-a56b-a4f7a0094922" />
 
 
+Creating new post:
 
 <img width="1918" height="533" alt="Screenshot 2025-07-23 235441" src="https://github.com/user-attachments/assets/fb33f0e9-c007-412b-92ad-37c5b913597e" />
 
 
+Edit Post:
 
 <img width="1915" height="365" alt="Screenshot 2025-07-23 235501" src="https://github.com/user-attachments/assets/c11adffb-2076-4bbf-ade5-0b38499d40be" />
 
 
+View Post:
 
 <img width="1919" height="444" alt="Screenshot 2025-07-23 235511" src="https://github.com/user-attachments/assets/0bd65709-3559-4722-91da-3db3c9e67701" />
 
