@@ -76,4 +76,5 @@ node app.js
 Navigate to http://localhost:3000/posts
 
 🔒 Security
+
 Input is escaped to prevent SQL Injection (using prepared statements).
