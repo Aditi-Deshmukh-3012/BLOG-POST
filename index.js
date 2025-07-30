@@ -1,6 +1,7 @@
+require('dotenv').config();
 const express  = require("express");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const path = require("path");
 const mysql = require("mysql2");
 const bcrypt = require("bcrypt");
@@ -8,12 +9,11 @@ const session = require("express-session");
 const flash = require("connect-flash");
 const engine = require("ejs-mate");
 app.engine("ejs",engine);
-const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "Aditi@123",        // Use your MySQL password
-    database: "postDB"
-});
+
+const db_url=`mysql://${process.env.USER}:${process.env.PASSWORD}@${process.env.HOST}/${process.env.DATABASE}`;
+
+const db = mysql.createConnection(db_url);
+
 
 db.connect((err) => {
     if (err) throw err;
@@ -326,6 +326,6 @@ app.get("/logout",requirelogin,(req,res)=>{
 });
 
 app.listen(port,()=>{
-    console.log("listening on port 3000");
+    console.log(`listening on port ${port}`);
 });
 
